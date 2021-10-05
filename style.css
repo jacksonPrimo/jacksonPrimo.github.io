@@ -1,0 +1,233 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: rgb(22,0,36);
+    background: linear-gradient(176deg, rgba(22,0,36,1) 0%, rgba(90,20,140,1) 42%, rgba(244,0,255,1) 100%);
+}
+nav{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(5px)
+}  
+nav ul{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li:hover{
+    margin-top: 5px;
+    text-decoration: overline;
+}
+nav ul li a{
+    font-size: 20px;
+}
+
+main{
+    padding-top: 60px;
+    height: auto;
+    width: 100%;
+}
+main section{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section .a_nav{
+    padding-top: 40px;
+}
+main section .div-section{
+    width: 100%;
+    padding-top: 15px;
+}
+/* == sobre == */
+main .sobre .div-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .sobre .div-section div.imagem{
+    text-align: center;
+}
+main .sobre .div-section div.imagem ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 3rem;
+}
+main .sobre .div-section div.imagem img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow:
+    0 0 0 10px rgba(112,252,241, 0.7),
+    0 0 0 15px rgba(112,252,241, 0.5),
+    0 0 0 20px rgba(112,252,241, 0.3)
+}
+main .sobre .div-section div.informacao{
+    width: 40%;
+}
+/* == Skills == */
+#skills-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#skills-list li{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#skills-list li label{
+    margin-left: -15px;
+}
+#skills-list .coffeecup {
+    display: flex;
+}
+#skills-list .coffeecup .handle {
+    position: relative;
+    z-index: 1;
+    border: 4px solid white;
+    width: 20px;
+    height: 25px;
+    left: -4px;
+    border-radius: 6px;
+}
+#skills-list .coffeecup .body {
+    position: relative;
+    z-index: 2;
+    width: 62px;
+    height: 52px;
+    background-color: white;
+    padding: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: auto;
+}
+#skills-list .coffeecup .body .content {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;   
+}
+#skills-list .coffeecup .body .percentage {
+    top: -18px;
+    left: 6px;
+    position: relative;
+}
+#skills-list .coffeecup .body .content .progress {
+    width: 145px;
+    height: 127px;
+    position: relative;
+    left: -35px;
+    border-radius: 50%;
+    background-color: rgb(165, 67, 42);
+    animation: rotate 4000ms infinite linear;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+main section.laboratorio .div-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main section.laboratorio .div-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 472px;
+    overflow: hidden;
+    height: 355px;
+    margin: 10px 0px 0px 10px;
+    border-radius: 6px;
+    padding: 10px 5px;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: -5px -5px 20px 4px rgba(0,0,0,0.3);
+}
+main section.laboratorio .div-section div img{
+    width: 95%;
+    height: 60%;
+    border-radius: 5px;
+}
+main section.contato .div-section div{
+    margin: 20px 0px; 
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+main section.contato .div-section p{
+    display: inline;
+}
+main section.contato .div-section i{
+    font-size: 2rem;
+    margin: 0px 15px;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 500px){
+    main .sobre .div-section{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    main .sobre .div-section div.informacao{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    #skills_list li{
+        width: 40%;
+        margin: 10px 0px;
+    }
+    main section.laboratorio .div-section{
+        flex-direction: column;
+    }
+    main section.laboratorio .div-section div{
+        min-width: 350px;
+        height: auto;
+        margin: 30px 0px 0px 10px;
+    }
+    main section.contato .div-section div{
+        justify-content: center;
+        width: 100%;
+        padding-left: 0px;
+        margin: 10px 0px;
+    }
+}
+
+
