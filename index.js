@@ -1,69 +1,76 @@
 const skills = [
-  {
-    name: 'HTML 5',
-    color: 'rgb(255, 156, 35)',
-    porcentage: 70,
-    bottom: -15
-  },
-  {
-    name: 'CSS 3',
-    color: 'rgb(43, 43, 255)',
-    porcentage: 60,
-    bottom: -20
-  },
-  {
-    name: 'NODE JS',
-    color: 'rgb(2, 163, 2)',
-    porcentage: 80,
-    bottom: -10
-  },
-  {
-    name: 'MYSQL',
-    color: 'rgb(69, 112, 243)',
-    porcentage: 30,
-    bottom: -25
-  },
-  {
-    name: 'MYSQL',
-    color: 'rgb(69, 112, 243)',
-    porcentage: 30,
-    bottom: -25
-  },
+ {
+   name: 'HTML 5',
+   color: 'rgb(255, 156, 35)',
+ },
+ {
+   name: 'CSS 3',
+   color: 'rgb(43, 43, 255)',
+ },
+ {
+   name: 'NODEJS',
+   color: 'rgb(2, 163, 2)',
+ },
+ {
+   name: 'NESTJS',
+   color: 'rgb(252, 20, 20)',
+ },
+ {
+   name: 'MYSQL',
+   color: 'rgb(69, 112, 243)',
+ },
+ {
+   name: 'MONGODB',
+   color: 'rgb(16, 218, 16)',
+ },
+ {
+   name: 'RUBY ON RAILS',
+   color: 'rgb(150, 13, 20)',
+ },
+ {
+   name: 'STRIPE',
+   color: 'rgb(151, 35, 228)',
+ },
+ {
+   name: 'VUEJS',
+   color: 'rgb(2, 163, 2)',
+ },
+ {
+   name: 'ANGULARJS',
+   color: 'rgb(252, 20, 20)',
+ },
+ {
+   name: 'FIREBASE',
+   color: 'rgb(233, 133, 39)',
+ },
+ {
+   name: 'GIT',
+   color: 'rgb(0, 0, 0)',
+ },
 ]
 const list = document.getElementById('skills-list')
 
-function MakeACoffeCup(percents, bottom) {
-  const coffeecup = document.createElement('div')
-  coffeecup.className = 'coffeecup'
-  const handle = document.createElement('div')
-  handle.className = 'handle'
-  const body = document.createElement('div')
-  body.className = 'body'
-  const content = document.createElement('div')
-  content.className = 'content'
-  const progress = document.createElement('div')
-  progress.className = 'progress'
-  progress.style.bottom = `${bottom}px`
-  const label = document.createElement('label')
-  label.className = 'percentage'
-  label.appendChild(document.createTextNode(`${percents}%`))
-  
-  content.appendChild(progress)
-  body.append(content, label)
+skills.forEach(skill => {
+ const bar = createBar(skill.color)
+ const title = createTitle(skill.name, "title")
+ const container = document.createElement("li");
+ container.append(title) 
+ container.append(bar)
+ list.appendChild(container)
+})
 
-  coffeecup.append(body, handle)
-  return coffeecup
+function createBar(color) {
+ const bar = document.createElement("div");
+ bar.className = "bar"
+ bar.style.backgroundColor = color
+ return bar
 }
 
-skills.forEach(skill => {
-  const label = document.createElement("label");
-  label.className = 'title'
-  label.style.color = skill.color
-  label.appendChild(document.createTextNode(skill.name))
-  
-  const li = document.createElement("li");
-  const coffeecup = MakeACoffeCup(skill.porcentage, skill.bottom)
-  li.append(label, coffeecup)
-  
-  list.appendChild(li)
-})
+function createTitle(name) {
+ const title = document.createElement("label");
+ title.className = "title"
+ title.appendChild(document.createTextNode(name))
+ return title
+}
+
+document.getElementById("current_year").innerHTML = new Date().getFullYear()

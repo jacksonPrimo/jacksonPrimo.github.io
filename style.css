@@ -1,233 +1,201 @@
 *{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-body{
-    background: rgb(22,0,36);
-    background: linear-gradient(176deg, rgba(22,0,36,1) 0%, rgba(90,20,140,1) 42%, rgba(244,0,255,1) 100%);
-}
-nav{
-    height: auto;
-    width: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    backdrop-filter: blur(5px)
-}  
-nav ul{
-    height: 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-nav ul li:hover{
-    margin-top: 5px;
-    text-decoration: overline;
-}
-nav ul li a{
-    font-size: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(54, 50, 35);
 }
 
-main{
-    padding-top: 60px;
-    height: auto;
-    width: 100%;
-}
-main section{
-    padding: 40px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main section .a_nav{
-    padding-top: 40px;
-}
-main section .div-section{
-    width: 100%;
-    padding-top: 15px;
-}
-/* == sobre == */
-main .sobre .div-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-main .sobre .div-section div.imagem{
-    text-align: center;
-}
-main .sobre .div-section div.imagem ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 3rem;
-}
-main .sobre .div-section div.imagem img{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    box-shadow:
-    0 0 0 10px rgba(112,252,241, 0.7),
-    0 0 0 15px rgba(112,252,241, 0.5),
-    0 0 0 20px rgba(112,252,241, 0.3)
-}
-main .sobre .div-section div.informacao{
-    width: 40%;
-}
-/* == Skills == */
-#skills-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#skills-list li{
-    width: 16%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-#skills-list li label{
-    margin-left: -15px;
-}
-#skills-list .coffeecup {
-    display: flex;
-}
-#skills-list .coffeecup .handle {
-    position: relative;
-    z-index: 1;
-    border: 4px solid white;
-    width: 20px;
-    height: 25px;
-    left: -4px;
-    border-radius: 6px;
-}
-#skills-list .coffeecup .body {
-    position: relative;
-    z-index: 2;
-    width: 62px;
-    height: 52px;
-    background-color: white;
-    padding: 2px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: auto;
-}
-#skills-list .coffeecup .body .content {
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    overflow: hidden;   
-}
-#skills-list .coffeecup .body .percentage {
-    top: -18px;
-    left: 6px;
-    position: relative;
-}
-#skills-list .coffeecup .body .content .progress {
-    width: 145px;
-    height: 127px;
-    position: relative;
-    left: -35px;
-    border-radius: 50%;
-    background-color: rgb(165, 67, 42);
-    animation: rotate 4000ms infinite linear;
-}
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    from { transform: rotate(360deg); }
-}
-main section.laboratorio .div-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-main section.laboratorio .div-section div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    min-width: 472px;
-    overflow: hidden;
-    height: 355px;
-    margin: 10px 0px 0px 10px;
-    border-radius: 6px;
-    padding: 10px 5px;
-    font-size: 1rem;
-    text-align: center;
-    box-shadow: -5px -5px 20px 4px rgba(0,0,0,0.3);
-}
-main section.laboratorio .div-section div img{
-    width: 95%;
-    height: 60%;
-    border-radius: 5px;
-}
-main section.contato .div-section div{
-    margin: 20px 0px; 
-    display: inline-block;
-    width: 49%;
-    text-align: center;
-}
-main section.contato .div-section p{
-    display: inline;
-}
-main section.contato .div-section i{
-    font-size: 2rem;
-    margin: 0px 15px;
+html {
+  scroll-behavior: smooth;
 }
 
-footer{
-    height: 40px;
-    width: 100%;
-    text-align: center;
-}
-@media (max-width: 500px){
-    main .sobre .div-section{
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    main .sobre .div-section div.informacao{
-        margin-top: 20px;
-        width: 100%;
-        text-align: center;
-    }
-    #skills_list li{
-        width: 40%;
-        margin: 10px 0px;
-    }
-    main section.laboratorio .div-section{
-        flex-direction: column;
-    }
-    main section.laboratorio .div-section div{
-        min-width: 350px;
-        height: auto;
-        margin: 30px 0px 0px 10px;
-    }
-    main section.contato .div-section div{
-        justify-content: center;
-        width: 100%;
-        padding-left: 0px;
-        margin: 10px 0px;
-    }
+a {
+  text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
 
+body nav ul {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+body nav ul li {
+  padding: 15px;
+}
+
+body nav ul li:nth-child(1){
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+body nav ul li:nth-child(1) a {
+  padding-left: 7px;
+}
+
+body nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+body nav ul li a:hover {
+  color: rgb(201, 139, 23);
+  transition-duration: 0.6s;
+}
+
+body nav ul li img {
+  border-radius: 50%;
+  width: 58px;
+}
+
+body main {
+  margin-top: 95px;
+}
+
+body main section {
+  padding: 100px 20px;
+}
+
+body main section .split-bar {
+  width: 70px;
+  height: 4px;
+  background-color: rgb(201, 139, 23);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+body main section .section-title {
+  font-size: 40px;
+  text-align: center;
+}
+
+body main section.title {
+  padding: 300px 25%;
+  align-items: center;
+  text-align: center;
+}
+
+body main section.title h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+body main section.title p {
+  font-size: 22px;
+}
+
+body main section.about {
+  background-color: #fafafa;
+}
+
+body main section.about p {
+  text-align: center;
+  font-size: 20px;
+}
+
+body main section.about .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px 15% 0 15%;
+  gap: 100px;
+}
+
+body main section.about .split .more-info p{
+  text-align: justify;
+}
+
+body main section.about .split .more-info .contact-me-btn {
+  position: relative;
+  margin-top: 25px;
+}
+
+body main section.about .split .more-info .contact-me-btn button {
+  background-color: rgb(201, 139, 23);
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  position: absolute;
+}
+
+body main section.about .split .more-info button:hover {
+  margin-top: -2px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 3px 4px rgba(192, 192, 192, 0.267);
+}
+
+body main section.about .split .sub-title {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+body main section.about .split span {
+  font-size: 20px;
+}
+
+body main section.about .split .skills #skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+body main section.about .split .skills #skills-list li {
+  min-height: 20px;
+  margin: 5px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+body main section.about .split .skills #skills-list li .title {
+  padding: 5px 10px;
+}
+
+body main section.about .split .skills #skills-list li .bar {
+  height: 100%;
+  width: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+body footer {
+  padding: 0 50px;
+  background-color: black;
+}
+
+body footer * {
+  color: white
+}
+
+body footer p, body footer span {
+  font-size: 16px;
+}
+
+body footer .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+body footer .copyright p {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgb(117, 117, 117);
+}
