@@ -1,5 +1,3 @@
-document.getElementById("current_year").append(new Date().getFullYear())
-
 let p_sobre = $('[name=sobre]').position().top - 68
 let link_sobre = $('[link-sobre]')
 let p_skills = $('[name=skills]').position().top - 220
@@ -33,5 +31,5 @@ setInterval(()=>{
         link_ctt.css(no_style)
     }
 }, 100)
-console.log($(document).scrollTop())
-console.log(p_ctt)
+
+$("#current-year").append(new Date().getFullYear())

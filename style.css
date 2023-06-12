@@ -22,7 +22,7 @@ html{
 i{
     color: var(--primary);
 }
-.menu_top{
+.menu-top{
     width: 100%;
     height: 80px;
     position: fixed;
@@ -30,17 +30,17 @@ i{
     left: 0px;
     backdrop-filter: blur(5px)
 }
-.menu_top ul{
+.menu-top ul{
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     list-style: none;
 }
-.menu_top ul li a{
+.menu-top ul li a{
     text-decoration: none;
 }
-.menu_top ul .nome{
+.menu-top ul .nome{
     margin-right: 20%;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
