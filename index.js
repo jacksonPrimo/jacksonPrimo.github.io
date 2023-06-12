@@ -1,3 +1,5 @@
+document.getElementById("current_year").append(new Date().getFullYear())
+
 let p_sobre = $('[name=sobre]').position().top - 68
 let link_sobre = $('[link-sobre]')
 let p_skills = $('[name=skills]').position().top - 220
