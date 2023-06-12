@@ -1,90 +1,166 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <img src="./assets/profile.jpg"/>
-          <a href="#home">JACKSON AQUINO PRIMO</a>
-        </li>
-        <li>
-          <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#laboratorio">Laboratório</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section class="title">
-        <h1>OLÁ, ME CHAMO JACKSON AQUINO!</h1>
-        <div class="line"></div>
-        <p>Desenvolvedor Full Stack, atuando na contrução de telas e componentes reutilizáveis</p>
-        <p>assim como apis escaláveis e performáticas</p>
-      </section>
-      <section class="about">
-        <div class="section-title">
-          SOBRE MIM
-        </div>
-        <div class="split-bar"></div>
-        <p>Aqui você irá encontrar mais informações sobre mim, o que eu faço e minhas</p>
-        <p>skills mais especificamente de desenvolvedor</p>
-        <div class="split">
-          <div class="more-info">
-            <div class="sub-title">Conheça um pouco sobre mim</div> 
-            <p>Sou um desenvolvedor de 22 anos de idade natural do maranhão, iniciei minha carreira como freelancer em 2020 trabalhando em projetos que envolvem a divulgação de redes sociais, automação de testes psicológicos, e-commerce e gerenciamento de eventos.</p>
-            <br>
-            <p>Estou aberto a novas oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você possui uma boa oportunidade que combine com minhas skills e experiência não exite em me contactar</p>
-            <div class="contact-me-btn">
-              <button>Entrar em contato</button>
-            </div>
-          </div>
-          <div class="skills">
-            <div class="sub-title">Skills</div> 
-            <ul id="skills-list">
+    <head>
+        <title>Portifólio</title>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <nav class="menu_top">
+            <ul>
+                <li class="nome"><i class="fa fa-chevron-left"></i><i class="fa">/</i> Jackson Aquino<i class="fa fa-chevron-right"></i></li>                
+                <li><a link-sobre href="#sobre">Sobre</a></li>                
+                <li><a link-skills href="#skills">Skills</a></li>                
+                <li><a link-lab href="#lab">Laboratório</a></li>                
+                <li><a link-ctt href="#ctt">Contato</a></li>                
             </ul>
-          </div>
-        </div>
-      </section>
-      <section class="projects">
-        <div class="section-title">
-          PROJETOS
-        </div>
-        <div class="split-bar"></div>
-      </section>
-      <section class="contato">
-      </section>
-    </main>
-    <footer>
-      <div class="split">
-        <section>
-          <h1>JACKSON AQUINO PRIMO</h1>
-          <p>Desenvolvedor Full Stack, atuando na contrução de telas e componentes reutilizáveis</p>
-          <p>assim como apis escaláveis e performáticas</p>
-        </section>
-        <section class="social-media">
-          linkedin,  github 
-        </section>
-      </div>
-      <hr>
-      <div class="copyright">
-        <p>&copy; Copyright <span id="current_year"></span>, feito por Jackson Aquino Primo</p>
-      </div>
-    </footer>
-  </body>
-  <script src="./index.js"></script>
+        </nav>
+        <main>
+            <div class="intro">
+                <div class="info">
+                    <h2>DESENVOLVEDOR FULL STACK</h2>
+                    <h1>Jackson Aquino</h1>
+                    <p>
+                        Desenvolvedor Full Stack, atuando na contrução de telas e componentes reutilizáveis
+                        assim como apis escaláveis e performáticas
+                    </p>
+                    <button>BAIXAR CURRÍCULO</button>
+                </div>
+                <div class="imagem">
+                    <img src="./assets/menino_no_computador.svg"/>
+                </div>
+            </div>
+            <div class="sobre div-topico"><a name="sobre"></a>
+                <span class="topico">
+                    <i class="fa fa-square-o"></i>
+                    <h1>SOBRE</h1>
+                </span>
+                <div class="conteudo-topico conteudo-topico-sobre">
+                    <div class="perfil">
+                        <img src="./assets/perfil.jpg"/>
+                        <p>Jackson Aquino</p>
+                        <ul>
+                            <li><a href="mailto:jackson.primo12@gmail.com?Subject=Título%20da%20mensagem" target="blank"><i class="fa fa-envelope-o"></a></i></li>
+                            <li><a href="https://github.com/jacksonPrimo" target="blank"><i class="fa fa-github" ></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/jackson-aquino-1b2a001a1/" target="blank"><i class="fa fa-linkedin-square" ></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h2>Conheçam um pouco sobre mim</h2>
+                        <p>
+                            Sou um desenvolvedor de 22 anos de idade natural do maranhão, iniciei minha carreira como freelancer em 2020 trabalhando em projetos que envolvem a divulgação de redes sociais, automação de testes psicológicos, e-commerce e gerenciamento de eventos.<br>
+                            Estou aberto a novas oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Se você possui uma boa oportunidade que combine com minhas skills e experiência não exite em me contactar
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills div-topico"><a name="skills"></a>
+                <span class="topico">
+                    <i class="fa fa-square-o"></i>
+                    <h1>SKILLS</h1>
+                </span>
+                <ul class="conteudo-topico conteudo-topico-skills">
+                    <li>
+                        <label>HTML 5</label>
+                        <img src="./assets/logo_html5.svg"/>
+                        <div class="barra">
+                            <div id="html"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>CSS 3</label>
+                        <img src="./assets/logo_css3.svg"/>
+                        <div class="barra">
+                            <div id="css"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>NODE JS</label>
+                        <img src="./assets/logo_nodejs.svg"/>
+                        <div class="barra">
+                            <div id="node"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>POSTGRE SQL</label>
+                        <img src="./assets/logo_postgresql.svg"/>
+                        <div class="barra">
+                            <div id="postgre"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label>JAVASCRIPT</label>
+                        <img src="./assets/logo_javascript.svg"/>
+                        <div class="barra">
+                            <div id="js"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="laboratorio div-topico"><a name="lab"></a>
+                <span class="topico">
+                    <i class="fa fa-square-o"></i>
+                    <h1>Laboratório</h1>
+                </span>
+                <div class="conteudo-topico conteudo-topico-lab">
+                    <div class="div-atras">
+                        <div class="div-frente">
+                            <img src="./assets/arefeicao.png"/>
+                            <h1>Arefeição</h1>
+                            <p>aplicação baseada em uma de mesmo nome para rezerva de vagas no refeitorio do IFPI.</p>
+                            <a href="https://github.com/jacksonPrimo/projeto-refeitorio" target="blank">link do repositório</a>
+                        </div>
+                    </div>
+                    <div class="div-atras">
+                        <div class="div-frente">
+                            <img src="./assets/bethehero.png"/>
+                            <h1>Be the Hero</h1>
+                            <p>
+                                aplicação feita durante a semana Omnistack, que possui como objetivo ajudar finançeiramente 
+                                Ongs das mais variadas atividades assim como cadastrar suas proprias Ongs.
+                            </p>
+                            <a href="https://github.com/jacksonPrimo/be-the-hero-OmniStack" target="blank">link do repositório</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contato div-topico"><a name="ctt"></a>
+                <span class="topico">
+                    <i class="fa fa-square-o"></i>
+                    <h1>Contato</h1>
+                </span>
+                <p>Fique a vontade para entrar em contato comigo, será um prazer atende-lo. Estou disponivel todos os dias.</p>
+                <div class="conteudo-topico conteudo-topico-ctt">
+                    <div>
+                        <i class="fa fa-mobile"></i>
+                        <p>(98)984172734</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <p>jackson.primo12@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-github"></i>
+                        <p>github/jacksonPrimo</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-linkedin"></i>
+                        <p>linkedin/in/jackson-aquino-1b2a001a1</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>&copy 2020 by Jackson Aquino - Estudante de ADS</p>
+            </footer>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <script src="index.js"></script>
+    </body>
 </html>
