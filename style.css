@@ -1,12 +1,13 @@
-:root{
+:root {
     --primary: rgb(112,252,241);
     --font-topico: 2.2rem;
     --text-1: #ffffff;
-    --text-2: #80858B;
+    --text-2: #a2abb6;
     --sombra: #252E3B;
     --cinza: #2a3443;
     --dark: #1B222C;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -16,13 +17,16 @@
     color: var(--text-1);
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-i{
+
+i {
     color: var(--primary);
 }
-.menu-top{
+
+.menu-top {
     width: 100%;
     height: 80px;
     position: fixed;
@@ -30,48 +34,57 @@ i{
     left: 0px;
     backdrop-filter: blur(5px)
 }
-.menu-top ul{
+
+.menu-top ul {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     list-style: none;
 }
-.menu-top ul li a{
+
+.menu-top ul li a {
     text-decoration: none;
 }
-.menu-top ul .nome{
+
+.menu-top ul .nome {
     margin-right: 20%;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
 }
-main{
+
+main {
     background-color: #202833;
     display: block;
     height: auto;
 }
-main .topico{
+
+.topico {
     display: flex;
     align-items: center;
     font-size: var(--font-topico);
     font-weight: bold;
     margin-bottom: 15px;
 }
-main .topico i{
+
+.topico i {
     margin-right: 10px;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
-main .div-topico{
+
+.div-topico{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
-main .div-topico .conteudo-topico{
+
+.div-topico .conteudo-topico {
     display: flex;
 }
-main .intro{
+
+#intro {
     height: 120vh;
     background: radial-gradient(50% 50% at 50% 50%, #2F3E52 27.6%, #202833 100%);
     font-size: 0.9em;
@@ -80,20 +93,25 @@ main .intro{
     align-items: center;
     margin-bottom: -150px;
 }
-.intro div{
+
+#intro div {
     max-width: 40%;
 }
-.intro h1{
+
+#intro h1 {
     font-size: 3rem;
 }
-.intro h2{
+
+#intro h2 {
     font-size: 1rem;
     color: var(--primary);
 }
-.intro p{
+
+#intro p {
     color: var(--text-2);
 }
-.intro button{
+
+#intro button {
     margin-top: 5px;
     border: 2px solid var(--primary);
     padding: 8px 0px;
@@ -102,34 +120,48 @@ main .intro{
     font-weight: bold;
     width: 72%;
     border-radius: 6px;
-    background-color: transparent;}
-.intro img{
+    background-color: transparent;
+}
+
+#intro button:hover {
+    transition: 1s;
+    background-color: var(--primary);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+#intro img {
     height: 350px;
     width: 350px;
-    background-color: transparent;}
-main .sobre{
+    background-color: transparent;
+}
+
+#sobre {
     justify-content: center;
-    height: 1260px;
     background: url('./assets/fundo1.svg') no-repeat, 
                 url('./assets/fundo2.svg') no-repeat;
+    background-size: cover;
+    height: 0;
+    padding: 50% 0;
 }
-main .sobre .conteudo-topico-sobre{
+
+#sobre .conteudo-topico-sobre {
     justify-content: space-around;
     align-items: center;
-    height: 40%;
-    width: 100%;
-    margin-bottom: 100px;
     font-size: 1.8rem;
 }
-main .sobre .conteudo-topico-sobre div{
+
+#sobre .conteudo-topico-sobre div {
     max-width: 50%;
     height: 40%;
 }
-main .sobre .conteudo-topico-sobre .perfil{
+
+#sobre .conteudo-topico-sobre .perfil {
     text-align: center;
     font-weight: bold;
 }
-main .sobre .conteudo-topico-sobre .perfil img{
+
+#sobre .conteudo-topico-sobre .perfil img {
     height: 200px;
     width: 200px;
     margin-bottom: 20px;
@@ -139,66 +171,78 @@ main .sobre .conteudo-topico-sobre .perfil img{
     0 0 0 15px rgba(112,252,241, 0.5),
     0 0 0 20px rgba(112,252,241, 0.3)
 }
-main .sobre .conteudo-topico-sobre .perfil ul{
+
+#sobre .conteudo-topico-sobre .perfil ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     font-size: 3rem;
 }
-main .sobre .conteudo-topico-sobre .info h2{
+
+#sobre .conteudo-topico-sobre .info h2 {
     font-size: 1.3rem;
     margin: 10px 0px;
     color: var(--text-1)
 }
-main .sobre .conteudo-topico-sobre .info p{
+
+#sobre .conteudo-topico-sobre .info p {
     font-size: 1.3rem;
     margin: 10px 0px;
     color: var(--text-2)
 }
-main .skills{
-    padding-top: 80px;
+
+#skills {
     align-items: center;
     justify-content: center;
 }
-main .skills .conteudo-topico-skills{
+
+#skills .conteudo-topico-skills {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-main .skills .conteudo-topico-skills li{
+
+#skills .conteudo-topico-skills li {
     width: 16%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-main .skills .conteudo-topico-skills li img{
+
+#skills .conteudo-topico-skills li img {
     width: 58px;
     height: 73px;
     margin: 0px 0px 18px 0px;
 }
-main .skills .conteudo-topico-skills li .barra{
+
+#skills .conteudo-topico-skills li .barra {
     width: 50%;
     height: 8px;
     border-radius: 5px;
     background-color: #0004;
 }
-main .skills .conteudo-topico-skills li .barra div{
+
+#skills .conteudo-topico-skills li .barra div {
     height: 100%;
     border-radius: 5px;
 }
+
 #html{
     width: 80%;
     background-color: rgb(255, 156, 35);
 }
+
 #css{
     width: 65%;
     background-color: rgb(43, 43, 255);
 }
+
 #node{
     width: 70%;
     background-color: rgb(2, 163, 2);
 }
+
 #postgre{
     width: 50%;
     background-color: rgb(69, 112, 243);
@@ -207,19 +251,19 @@ main .skills .conteudo-topico-skills li .barra div{
     width: 80%;
     background-color: rgb(241, 241, 0);
 }
-main .laboratorio .conteudo-topico-lab{
+#laboratorio .conteudo-topico-lab{
     height: 70%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-main .laboratorio .conteudo-topico-lab .div-atras{
+#laboratorio .conteudo-topico-lab .div-atras{
     height: 85%;
     width: 35%;
     background-color: var(--primary);
     border-radius: 6px;
 }
-main .laboratorio .conteudo-topico-lab .div-frente{
+#laboratorio .conteudo-topico-lab .div-frente{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,17 +277,17 @@ main .laboratorio .conteudo-topico-lab .div-frente{
     text-align: center;
     box-shadow: -8px -7px 20px 4px rgba(0,0,0,0.3);
 }
-main .laboratorio .conteudo-topico-lab .div-frente img{
+#laboratorio .conteudo-topico-lab .div-frente img{
     width: 95%;
     height: 55%;
     border-radius: 5px;
 }
-main .contato .conteudo-topico-ctt{
+#contato .conteudo-topico-ctt{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
 }
-main .contato .conteudo-topico-ctt div{
+#contato .conteudo-topico-ctt div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -251,7 +295,7 @@ main .contato .conteudo-topico-ctt div{
     height: 40px;
     margin: 20px 0px;
 }
-main .contato .conteudo-topico-ctt div i{
+#contato .conteudo-topico-ctt div i{
     font-size: 2rem;
     margin: 0px 15px;
 }

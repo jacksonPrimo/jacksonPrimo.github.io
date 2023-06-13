@@ -32,4 +32,26 @@ setInterval(()=>{
     }
 }, 100)
 
+// var topics = document.getElementsByClassName('div-topico');
+// for (var i = 0; i < topics.length; i++) {
+//   topics[i].addEventListener('mouseover', function() {
+//     this.style.color = '#fff';
+//     this.style.backgroundColor = '#333';
+//     console.log(topics[i])
+//   });
+
+//   topics[i].addEventListener('mouseout', function() {
+//     this.style.color = '#333';
+//     this.style.backgroundColor = 'transparent';
+//   });
+// }
+
+
 $("#current-year").append(new Date().getFullYear())
+
+function downloadPDF() {
+    var link = document.createElement('a');
+    link.href = 'assets/curriculo.pdf';
+    link.download = 'jackson_aquino.pdf';
+    link.click();
+}
