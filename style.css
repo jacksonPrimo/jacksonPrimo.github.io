@@ -47,6 +47,12 @@ i {
     text-decoration: none;
 }
 
+.menu-top ul li a.active, .menu-top ul li a:hover {
+    color: var(--primary); 
+    font-weight: bold;
+    text-decoration: overline
+}
+
 .menu-top ul .nome {
     margin-right: 20%;
     font-family: 'Orbitron', sans-serif;
@@ -251,19 +257,27 @@ main {
     width: 80%;
     background-color: rgb(241, 241, 0);
 }
-#laboratorio .conteudo-topico-lab{
+
+#laboratorio {
+    align-items: center;
+    justify-content: center;
+}
+
+#laboratorio .conteudo-topico-lab {
     height: 70%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-#laboratorio .conteudo-topico-lab .div-atras{
+
+#laboratorio .conteudo-topico-lab .div-atras {
     height: 85%;
     width: 35%;
     background-color: var(--primary);
     border-radius: 6px;
 }
-#laboratorio .conteudo-topico-lab .div-frente{
+
+#laboratorio .conteudo-topico-lab .div-frente {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,17 +291,25 @@ main {
     text-align: center;
     box-shadow: -8px -7px 20px 4px rgba(0,0,0,0.3);
 }
-#laboratorio .conteudo-topico-lab .div-frente img{
+
+#laboratorio .conteudo-topico-lab .div-frente img {
     width: 95%;
     height: 55%;
     border-radius: 5px;
 }
-#contato .conteudo-topico-ctt{
+
+#contato {
+    align-items: center;
+    justify-content: center;
+}
+
+#contato .conteudo-topico-ctt {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
 }
-#contato .conteudo-topico-ctt div{
+
+#contato .conteudo-topico-ctt div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -295,11 +317,13 @@ main {
     height: 40px;
     margin: 20px 0px;
 }
-#contato .conteudo-topico-ctt div i{
+
+#contato .conteudo-topico-ctt div i {
     font-size: 2rem;
     margin: 0px 15px;
 }
-footer{
+
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
