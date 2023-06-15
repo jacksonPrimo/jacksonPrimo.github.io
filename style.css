@@ -232,30 +232,7 @@ main {
 #skills .conteudo-topico-skills li .barra div {
     height: 100%;
     border-radius: 5px;
-}
-
-#html{
-    width: 80%;
-    background-color: rgb(255, 156, 35);
-}
-
-#css{
-    width: 65%;
-    background-color: rgb(43, 43, 255);
-}
-
-#node{
-    width: 70%;
-    background-color: rgb(2, 163, 2);
-}
-
-#postgre{
-    width: 50%;
-    background-color: rgb(69, 112, 243);
-}
-#js{
-    width: 80%;
-    background-color: rgb(241, 241, 0);
+    animation-duration: 5s;
 }
 
 #laboratorio {
