@@ -1,3 +1,24 @@
+function calcAge() {
+  const birthDate = new Date(2000, 5, 7);
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  const currentMonth = today.getMonth();
+  const diaAtual = today.getDate();
+  
+  const birthMonth = birthDate.getMonth();
+  const birthDay = birthDate.getDate();
+
+  if (currentMonth < birthMonth || (currentMonth === birthMonth && diaAtual < birthDay)) {
+    age--;
+  }
+
+  return age;
+}
+let ageElement = document.getElementById('age')
+ageElement.append(calcAge())
+
 var topics = document.getElementsByClassName('div-topico');
 for (var i = 0; i < topics.length; i++) {
   topics[i].addEventListener('mouseover', function() {
