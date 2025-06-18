@@ -75,7 +75,7 @@ main {
 
 .topico i {
     margin-right: 10px;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 .div-topico{
@@ -109,7 +109,7 @@ main {
 }
 
 #intro h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--primary);
 }
 
@@ -172,6 +172,7 @@ main {
     width: 200px;
     margin-bottom: 20px;
     border-radius: 50%;
+    object-fit: cover;
     box-shadow:
     0 0 0 10px rgba(112,252,241, 0.7),
     0 0 0 15px rgba(112,252,241, 0.5),
