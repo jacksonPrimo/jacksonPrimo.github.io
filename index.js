@@ -64,23 +64,41 @@ function createSkill(skill, index){
 
 const skills = [
   {
+    title: "JAVASCRIPT",
+    image: "./assets/logos/logo_javascript.svg",
+    percentage: "70%",
+    color: "#f1f100"
+  },
+  {
     title: "HTML 5",
     image: "./assets/logos/logo_html5.svg",
-    percentage: "80%",
+    percentage: "70%",
     color: "#ff9c23"
   }, 
   {
     title: "CSS 3",
     image: "./assets/logos/logo_css3.svg",
-    percentage: "80%",
+    percentage: "70%",
     color: "#2b2bff"
   }, 
   {
     title: "NODE JS",
     image: "./assets/logos/logo_nodejs.svg",
-    percentage: "70%",
+    percentage: "75%",
     color: "#02a302"
   }, 
+  {
+    title: "NEST JS",
+    image: "./assets/logos/logo_nest.svg",
+    percentage: "65%",
+    color: "#ff0055"
+  },
+  {
+    title: "RUBY",
+    image: "./assets/logos/logo_ruby.svg",
+    percentage: "70%",
+    color: "#ec0808"
+  },
   {
     title: "POSTGRE SQL",
     image: "./assets/logos/logo_postgresql.svg",
@@ -88,11 +106,41 @@ const skills = [
     color: "#4570f3"
   }, 
   {
-    title: "JAVASCRIPT",
-    image: "./assets/logos/logo_javascript.svg",
+    title: "VUE JS",
+    image: "./assets/logos/logo_vue.svg",
+    percentage: "80%",
+    color: "#2bc52b"
+  },
+  {
+    title: "REACT",
+    image: "./assets/logos/logo_react.svg",
+    percentage: "50%",
+    color: "#00c3ff"
+  },
+  {
+    title: "FIREBASE",
+    image: "./assets/logos/logo_firebase.svg",
+    percentage: "65%",
+    color: "#ff8800"
+  },
+  {
+    title: "DOCKER",
+    image: "./assets/logos/logo_docker.svg",
     percentage: "70%",
-    color: "#f1f100"
-  }, 
+    color: "#00c3ff"
+  },
+  {
+    title: "N8N",
+    image: "./assets/logos/logo_n8n.svg",
+    percentage: "40%",
+    color: "#ff006a"
+  },
+  {
+    title: "RABBITMQ",
+    image: "./assets/logos/logo_rabbitmq.svg",
+    percentage: "60%",
+    color: "#b66100"
+  },
 ]
 
 skills.forEach((skill, index)=>{
